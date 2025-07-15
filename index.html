@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Information Technology</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <style>
+      @font-face {
+        font-family: "mn";
+        src: url(font/MN-Gyeran-ppang/คเยรันปัง/MN\ Gyeran-ppang\ Bold.ttf);
+      }
+      * {
+        font-family: "mn", sans-serif;
+      }
+      .head {
+        margin: auto;
+        padding: 10px;
+        font-size: 30px;
+        text-align: center;
+        justify-content: center;
+      }
+      .nav{
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- haed -->
+      <div class="head">
+        <h1>My Portfolio<br />วิรดา ยาจันทรา</h1>
+      </div>
+      <!-- nav -->
+       <nav class="navbar navbar-expand-lg bg-light sticky-top">
+      <div class="container-fluid justify-content-center">
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item pe-3">
+              <a class="nav-link" href="#Home">Home</a>
+            </li>
+            <li class="nav-item border-start ps-3 pe-3">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item border-start ps-3 pe-3">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+        <!-- Carousel -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/6.png" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>เจ้าของ Website</h5>
+                <p>
+                  นางสาววิรดา  ยาจันทรา นักศึกษาแผนกเทคโนโลยีสารสนเทศ ปวส.1
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/2.png" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>กิจกรรมตักบาตรทำบุญ</h5>
+                <p>
+                  กิจกรรมตักบาตรทำบุญที่วิทยาลัยเทคนิคสัตหีบ.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/5.png" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>กิจกรรมกีฬาช่าง</h5>
+                <p>
+                  กีฬาช่างแผนกเทคโนโลยีสารสนเทศ.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <!-- Projects Section -->
+
+      <main class="container my-5" id="projects">
+        <h2 class="text-center mb-4">ผลงานของฉัน</h2>
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card h-100">
+              <img
+                src="img/logo.png"
+                class="card-img-top"
+                alt="Project 1"
+                width="100"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Web Anamaipro</h5>
+                <p class="card-text">
+                  เว็บเกี่ยวกับอาชีวอนามัยและความปลอดภัย
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#projectModal1"
+                >
+                  ดูโปรเจกต์
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card h-100">
+              <img
+                src="img/mini.png"
+                class="card-img-top"
+                alt="Project 2"
+                width="100"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Mini Project</h5>
+                <p class="card-text">“ฝันถึงแฟนเก่า” (Mini Project) </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#projectModal2"
+                >
+                  ดูโปรเจกต์
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card h-100">
+              <img src="img/mini 2.png" class="card-img-top" alt="Project 3" />
+              <div class="card-body">
+                <h5 class="card-title">Mini Project</h5>
+                <p class="card-text">จากตรงนี้ที่(เคย)สวยงาม [La La Bye] - AYLA's [MUSIC VIDEO]</p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#projectModal3"
+                >
+                  ดูโปรเจกต์
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- Contact Section -->
+      <section class="container my-5" id="contact">
+        <h2 class="text-center mb-4">ติดต่อฉัน</h2>
+        <form>
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="firstName" class="form-label">ชื่อ</label>
+              <input
+                type="text"
+                class="form-control"
+                id="firstName"
+                placeholder="กรอกชื่อของคุณ"
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="lastName" class="form-label">นามสกุล</label>
+              <input
+                type="text"
+                class="form-control"
+                id="lastName"
+                placeholder="กรอกนามสกุลของคุณ"
+              />
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">อีเมล</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="example@email.com"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">ข้อความ</label>
+            <textarea
+              class="form-control"
+              id="message"
+              rows="5"
+              placeholder="พิมพ์ข้อความของคุณที่นี่..."
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-success">ส่งข้อความ</button>
+        </form>
+      </section>
+
+      <!-- Footer -->
+      <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">© 2025 Wirada  Yachanyha. All rights reserved.</p>
+      </footer>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
